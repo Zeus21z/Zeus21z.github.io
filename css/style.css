@@ -8,42 +8,53 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header {
+    flex: 1 1 30%;
     text-align: center;
-    border-bottom: 2px solid #1E90FF;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+header .profile-pic {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; /* Rectangular con bordes suaves como en tu imagen */
+    margin-bottom: 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #1E90FF;
+}
+
+header h2 {
+    color: #1E90FF;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    margin-top: 15px;
 }
 
 header p {
     margin: 5px 0;
     color: #555;
+    font-size: 0.9em;
 }
 
-.contact-info p {
-    margin: 5px 0;
-}
-
-.contact-info a {
-    color: #1E90FF;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
+main {
+    flex: 1 1 65%;
+    padding-left: 20px;
 }
 
 section {
@@ -54,6 +65,7 @@ h2 {
     color: #1E90FF;
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
+    font-size: 1.2em;
 }
 
 .job {
@@ -62,31 +74,33 @@ h2 {
 
 .job h3 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    color: #333;
 }
 
 .job p {
     margin: 5px 0;
     color: #555;
+    font-style: italic;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 20px;
+    font-size: 0.95em;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #777;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container {
-        padding: 10px;
+        flex-direction: column;
     }
-
-    header h1 {
-        font-size: 2em;
+    header {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    main {
+        padding-left: 0;
     }
 }
