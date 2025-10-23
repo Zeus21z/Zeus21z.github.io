@@ -1,25 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.querySelector('.toggle-btn');
-    const jobList = document.querySelector('.job-list');
+// Inicializar animaciones AOS
+AOS.init({
+    duration: 1000, // Duración de cada animación en ms
+    once: true // Animar solo una vez
+});
 
-    // Inicialmente ocultar la lista de trabajos y mostrar solo el primero
-    jobList.style.maxHeight = '300px'; // Altura suficiente para un trabajo
-    toggleBtn.addEventListener('click', () => {
-        if (jobList.style.maxHeight === '300px' || jobList.style.maxHeight === '') {
-            jobList.style.maxHeight = jobList.scrollHeight + 'px'; // Expandir a la altura total
-            toggleBtn.textContent = 'Ocultar';
-        } else {
-            jobList.style.maxHeight = '300px'; // Volver a altura inicial
-            toggleBtn.textContent = 'Mostrar/Ocultar';
-        }
-    });
+// Scroll suave en toda la página
+document.documentElement.style.scrollBehavior = "smooth";
 
-    // Animación al pasar el ratón sobre la foto
-    const profilePic = document.querySelector('.profile-pic');
-    profilePic.addEventListener('mouseover', () => {
-        profilePic.style.transform = 'scale(1.05)';
-    });
-    profilePic.addEventListener('mouseout', () => {
-        profilePic.style.transform = 'scale(1)';
-    });
+// Pequeño efecto de aparición gradual al cargar
+window.addEventListener('load', () => {
+    document.body.style.opacity = 0;
+    document.body.style.transition = 'opacity 1s ease-in';
+    setTimeout(() => {
+        document.body.style.opacity = 1;
+    }, 100);
 });
