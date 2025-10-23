@@ -6,75 +6,91 @@
     <title>Currículum - Zeus Inti Villarroel García</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Librería de animaciones AOS -->
+    <!-- Fuente e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9b9e76d.js" crossorigin="anonymous"></script>
+
+    <!-- Librería AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="background"></div>
+
     <div class="container" data-aos="fade-up">
-        <header data-aos="fade-right">
+        <header>
             <img src="images/photo.jpeg" alt="Zeus Villarroel" class="profile-pic">
             <h1>Zeus Inti Villarroel García</h1>
+            <p class="subtitle">Estudiante de Ingeniería en Sistemas</p>
 
-            <section class="contact" data-aos="fade-up">
-                <h2>Datos de Contacto</h2>
-                <p><span class="icon">📞</span> Celular: (+591) 72655708</p>
-                <p><span class="icon">📧</span> Correo: villarroelgarciazeus@gmail.com</p>
-                <p><span class="icon">🏠</span> Dirección: Calle Palestina, 7mo y 8vo Anillo Norte</p>
-                <p><span class="icon">🎂</span> Edad: 22</p>
-            </section>
-
-            <section class="about" data-aos="fade-up">
-                <h2>Acerca de Mí</h2>
-                <p>Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Tengo la mejor disposición para la realización de mis labores, aprendo rápido y tengo sinceridad sobre las cosas.</p>
-            </section>
+            <div class="social-links">
+                <a href="https://github.com/Zeus21z" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="cv/ZeusVillarroelCV.pdf" download title="Descargar CV en PDF" class="btn-download">
+                    <i class="fas fa-file-download"></i> Descargar CV
+                </a>
+            </div>
         </header>
 
-        <main>
-            <section class="experience" data-aos="fade-up">
-                <h2>Experiencia Laboral</h2>
+        <section class="contact" data-aos="fade-right">
+            <h2>Datos de Contacto</h2>
+            <p><span class="icon">📞</span> (+591) 72655708</p>
+            <p><span class="icon">📧</span> villarroelgarciazeus@gmail.com</p>
+            <p><span class="icon">🏠</span> Calle Palestina, 7mo y 8vo Anillo Norte</p>
+            <p><span class="icon">🎂</span> 22 años</p>
+        </section>
 
-                <div class="job" data-aos="fade-up">
-                    <h3>Auxiliar de Laboratorios de Cómputo</h3>
-                    <p>Universidad Domingo Savio | 2023 - Presente</p>
-                    <ul>
-                        <li>Gestioné el mantenimiento, configuración y optimización de equipos en laboratorios de cómputo, asegurando su correcto funcionamiento.</li>
-                        <li>Brindé soporte técnico a usuarios, resolviendo incidencias de hardware y software de manera eficiente.</li>
-                        <li>Colaboré en la implementación de protocolos para la administración y seguridad de los recursos tecnológicos.</li>
-                        <li>Documenté procesos y elaboré reportes detallados para garantizar la continuidad operativa.</li>
-                    </ul>
-                </div>
+        <section class="about" data-aos="fade-up">
+            <h2>Acerca de Mí</h2>
+            <p>Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Tengo la mejor disposición para realizar mis labores, aprendo rápido y siempre busco mejorar mis habilidades.</p>
+        </section>
 
-                <div class="job" data-aos="fade-up">
-                    <h3>Soporte Técnico</h3>
-                    <p>Empresa Privada | 2021 - 2022</p>
-                    <ul>
-                        <li>Diagnostiqué y resolví problemas técnicos en equipos de cómputo, incluyendo hardware, software y conectividad.</li>
-                        <li>Realicé mantenimiento preventivo y correctivo de sistemas operativos (Windows) y periféricos.</li>
-                        <li>Asistí a usuarios en la configuración de herramientas, mejorando su productividad.</li>
-                        <li>Implementé soluciones básicas de redes, asegurando la estabilidad de los sistemas.</li>
-                    </ul>
-                </div>
-            </section>
+        <section class="experience" data-aos="fade-up">
+            <h2>Experiencia Laboral</h2>
 
-            <section class="education" data-aos="fade-left">
-                <h2>Educación</h2>
-                <p><strong>Universidad Domingo Savio</strong> | Estudiando Ingeniería en Sistemas | En curso</p>
-                <p><strong>Colegio Secundario Gloria</strong> | Bachiller | 2020</p>
-                <p><strong>Certificado:</strong> Desarrollo de talento en programación</p>
-            </section>
-
-            <section class="skills" data-aos="fade-up">
-                <h2>Habilidades</h2>
+            <div class="job" data-aos="fade-up">
+                <h3>Auxiliar de Laboratorios de Cómputo</h3>
+                <p class="job-info">Universidad Domingo Savio | 2023 - Presente</p>
                 <ul>
-                    <li>Dominio avanzado de Microsoft Office (Word, Excel, PowerPoint) y herramientas de diseño básico</li>
-                    <li>Nivel de inglés: Medio - Alto</li>
+                    <li>Gestioné el mantenimiento, configuración y optimización de equipos.</li>
+                    <li>Brindé soporte técnico y resolví incidencias de hardware y software.</li>
+                    <li>Colaboré en la implementación de protocolos de seguridad tecnológica.</li>
+                    <li>Elaboré reportes técnicos para la continuidad operativa.</li>
                 </ul>
-            </section>
-        </main>
+            </div>
+
+            <div class="job" data-aos="fade-up">
+                <h3>Soporte Técnico</h3>
+                <p class="job-info">Empresa Privada | 2021 - 2022</p>
+                <ul>
+                    <li>Diagnostiqué y resolví problemas de hardware y software.</li>
+                    <li>Realicé mantenimiento preventivo y correctivo.</li>
+                    <li>Asistí a usuarios en configuración de herramientas.</li>
+                    <li>Implementé soluciones básicas de redes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education" data-aos="fade-left">
+            <h2>Educación</h2>
+            <p><strong>Universidad Domingo Savio</strong> — Ingeniería en Sistemas (En curso)</p>
+            <p><strong>Colegio Gloria</strong> — Bachiller (2020)</p>
+            <p><strong>Certificado:</strong> Desarrollo de Talento en Programación</p>
+        </section>
+
+        <section class="skills" data-aos="fade-up">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Dominio avanzado de Microsoft Office y herramientas de diseño.</li>
+                <li>Nivel de inglés: Medio - Alto.</li>
+                <li>Conocimientos en redes, soporte técnico y mantenimiento de sistemas.</li>
+                <li>Capacidad de aprendizaje rápido y trabajo en equipo.</li>
+            </ul>
+        </section>
     </div>
 
-    <!-- Librería de animaciones -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
