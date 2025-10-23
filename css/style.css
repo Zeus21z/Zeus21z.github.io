@@ -12,7 +12,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #ffb88c, #de6262);
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
     z-index: -1;
     animation: gradientShift 10s ease infinite alternate;
 }
@@ -41,35 +41,35 @@ header {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 230px;
+    height: 280px;
+    border-radius: 15px;
     object-fit: cover;
-    border: 5px solid #ff9966;
-    box-shadow: 0 0 15px rgba(255, 153, 102, 0.6);
+    border: 4px solid #66a6ff;
+    box-shadow: 0 0 20px rgba(102, 166, 255, 0.6);
     margin-bottom: 15px;
 }
 
 h1 {
-    color: #de6262;
+    color: #1e3c72;
     margin-bottom: 5px;
 }
 
 .subtitle {
-    color: #666;
+    color: #555;
     font-weight: 400;
 }
 
 h2 {
-    color: #ff9966;
-    border-bottom: 2px solid #ff9966;
+    color: #1e3c72;
+    border-bottom: 2px solid #66a6ff;
     display: inline-block;
     padding-bottom: 5px;
 }
 
 .job {
-    background: #fff6f1;
-    border-left: 5px solid #ff9966;
+    background: #f0f8ff;
+    border-left: 5px solid #66a6ff;
     padding: 15px 20px;
     border-radius: 10px;
     margin: 15px 0;
@@ -77,7 +77,7 @@ h2 {
 }
 
 .job:hover {
-    background: #ffe4d8;
+    background: #e0f0ff;
 }
 
 .job-info {
@@ -92,12 +92,12 @@ ul {
 
 ul li::before {
     content: "✔";
-    color: #de6262;
+    color: #1e3c72;
     margin-right: 8px;
 }
 
 .btn-download {
-    background: #de6262;
+    background: #1e3c72;
     color: white;
     padding: 10px 18px;
     border-radius: 30px;
@@ -108,7 +108,7 @@ ul li::before {
 }
 
 .btn-download:hover {
-    background: #ff9966;
+    background: #66a6ff;
     transform: scale(1.05);
 }
 
@@ -117,14 +117,14 @@ ul li::before {
 }
 
 .social-links a {
-    color: #333;
-    font-size: 25px;
+    color: #1e3c72;
+    font-size: 26px;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #de6262;
+    color: #66a6ff;
 }
 
 section {
